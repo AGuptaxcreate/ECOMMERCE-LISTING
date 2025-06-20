@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone - Category</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ShopZone</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <main>
+    <h2 id="category-title">Products</h2>
+    <div class="filter">
+      <label>Min Price: <input type="number" id="minPrice"></label>
+      <label>Max Price: <input type="number" id="maxPrice"></label>
+      <button onclick="applyFilter()">Apply Filter</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+  <script src="data/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
